@@ -1,4 +1,4 @@
-Currency Converter API
+# Currency Converter API
 
 A .NET 8 Web API that converts US Dollars (USD) to Sierra Leone Leones (SLE).
 This project demonstrates modern backend practices including:
@@ -13,9 +13,9 @@ This project demonstrates modern backend practices including:
 
 ✅ Swagger UI for interactive API testing
 
-🚀 Features
+# 🚀 Features
 
-# User Authentication
+User Authentication
 
 1. Register with email
 
@@ -23,25 +23,25 @@ This project demonstrates modern backend practices including:
 
 3. Login and secured endpoints with JWT
 
-# Currency Conversion
+Currency Conversion
 
 Convert USD → SLE using real-time exchange rates
 
-# Security
+Security
 
 1. JWT Bearer token authentication
 
 2. OTP verification before access
 
-# Documentation
+Documentation
 
-Swagger UI pre-configured to accept JWT tokens
+1. Swagger UI pre-configured to accept JWT tokens
 
-# Persistence
+Persistence
 
-SQL Server database via EF Core (Users, OTPs, Logs, etc.)
+1. SQL Server database via EF Core (Users, OTPs, Logs, etc.)
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 1. .NET 8 Web API
 
@@ -55,7 +55,7 @@ SQL Server database via EF Core (Users, OTPs, Logs, etc.)
 
 6. Apilayer Exchange Rates API
 
-📂 Project Structure
+# 📂 Project Structure
 CurrencyConverterApi/
 │── Controllers/
 │   ├── AuthController.cs       # Handles Register, OTP, Login
@@ -80,7 +80,7 @@ CurrencyConverterApi/
 │── appsettings.json            # Configuration
 │── README.md                   # Project documentation
 
-⚙️ Setup & Installation
+# ⚙️ Setup & Installation
 1. Clone Repo
 git clone https://github.com/yourusername/CurrencyConverterApi.git
 cd CurrencyConverterApi
@@ -125,7 +125,7 @@ dotnet run
 Swagger will be available at:
 👉 https://localhost:5001/swagger
 
-🔑 Authentication Flow
+# 🔑 Authentication Flow
 
 1. Register
 POST /api/Auth/register → sends OTP to email
@@ -142,7 +142,7 @@ Copy token into Swagger Authorize dialog (no need to type "Bearer ")
 5. Access Protected Endpoint
 Example: POST /api/Conversion/usd-to-sll
 
-📬 Example Request (Conversion)
+# 📬 Example Request (Conversion)
 curl -X POST "https://localhost:5001/api/Conversion/usd-to-sll" \
   -H "Authorization: Bearer <YOUR_TOKEN>" \
   -H "Content-Type: application/json" \
@@ -158,7 +158,7 @@ Response:
   "timestamp": "2025-07-03T16:17:27Z"
 }
 
-📖 Roadmap
+# 📖 Roadmap
 
  1. Add Refresh Tokens for longer sessions
 
@@ -168,6 +168,6 @@ Response:
 
 4. Deploy to Azure App Service
 
-📝 License
+# 📝 License
 
 MIT License. Free to use and modify.
